@@ -8,13 +8,13 @@ The process flow is as follows:
 
 3)Perform the training process:
   
-    3a)The doctor assigns a score from 0-10 corresponding to the similarity between each of the training images. with 0 meaning "most similar" and 10     equivalent to "most dissimilar". Therefore, if we have I training images, we get an IxI similarity matrix.
+   	3a)The doctor assigns a score from 0-10 corresponding to the similarity between each of the training images. with 0 meaning "most similar" and 10     equivalent to "most dissimilar". Therefore, if we have I training images, we get an IxI similarity matrix.
   
-    3b) This similarity matrix is given as input to the MDS algorithm which gives a "n"-Dimensional plot as output corresponding to the no of eigenvalues "n" that we choose. We chose n=2 and n=3 and obtained both 2D and 3D MDS output plots. The MDS output plots clusters the image points according to the degree of burn. We opt to go for 3D MDS since using 3 features could provide more accuracy than just 2 features.
+   	3b) This similarity matrix is given as input to the MDS algorithm which gives a "n"-Dimensional plot as output corresponding to the no of eigenvalues "n" that we choose. We chose n=2 and n=3 and obtained both 2D and 3D MDS output plots. The MDS output plots clusters the image points according to the degree of burn. We opt to go for 3D MDS since using 3 features could provide more accuracy than just 2 features.
   
-    3c) By analyzing the coordinates and by consulting our reference IEEE paper, the X,Y and Z coordinates are obtained as the amount of redness, texture and saturation respectively. These 3 parameters are then calculated for each of the training images.
+   	3c) By analyzing the coordinates and by consulting our reference IEEE paper, the X,Y and Z coordinates are obtained as the amount of redness, texture and saturation respectively. These 3 parameters are then calculated for each of the training images.
   
-    3d) The KNN algorithm is trained using the training set to predict the degree of burn given the X,Y and Z coordinates as input.
+   	3d) The KNN algorithm is trained using the training set to predict the degree of burn given the X,Y and Z coordinates as input.
 
 
 4) Perfom the testing process:
