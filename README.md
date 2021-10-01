@@ -14,13 +14,14 @@ The process flow is as follows:
   ![Screenshot (329)](https://user-images.githubusercontent.com/70104287/135692580-ed8698a7-827f-440a-b563-d955e8376d30.png)
 
    3b) This similarity matrix is given as input to the MDS algorithm which gives a "n"-Dimensional plot as output corresponding to the no of eigenvalues "n" that we choose. We chose n=2 and n=3 and obtained both 2D and 3D MDS output plots. The MDS output plots clusters the image points according to the degree of burn. We opt to go for 3D MDS since using 3 features could provide more accuracy than just 2 features.
+
+![Screenshot (330)](https://user-images.githubusercontent.com/70104287/135692708-4ca7cba0-7b9d-4901-9920-89fa488ee261.png)
     
   
    3c) By analyzing the coordinates and by consulting our reference IEEE paper, the X,Y and Z coordinates are obtained as the amount of redness, texture and saturation respectively. These 3 parameters are then calculated for each of the training images.
   
    3d) The KNN algorithm is trained using the training set to predict the degree of burn given the X,Y and Z coordinates as input.
 
-![Screenshot (330)](https://user-images.githubusercontent.com/70104287/135692708-4ca7cba0-7b9d-4901-9920-89fa488ee261.png)
 
 4) Perfom the testing process:
   
