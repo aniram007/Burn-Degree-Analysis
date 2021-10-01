@@ -1,5 +1,6 @@
 # Burn-Degree-Analysis
-This involves analyzing the degree of a burn (1st, 2nd or 3rd degree) using multisimensional scaling (MDS) and a kNN classifier.
+This involves analyzing the degree of a burn (1st, 2nd or 3rd degree) using multisimensional scaling (MDS) and a kNN classifier. A major reference for this project is "Burn Depth Analysis using Multidimensional Scaling" by Acha et al. The link to this paper is provided here: https://ieeexplore.ieee.org/document/6488854
+
 The process flow is as follows:
 
 1)Get a dataset of burn images. (The dataset for this project was obtained from the following sources: (i) Dr Mathivanan of Sri Venkataeswara Hospitals, Chennai  (ii) Medetec Wound Database, UK  (iii)Shriner Hospital, Cincinatti, USA).
