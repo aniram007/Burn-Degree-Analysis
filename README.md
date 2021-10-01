@@ -25,11 +25,11 @@ The process flow is as follows:
 
 4) Perfom the testing process:
   
-     4a)The test images are segmented and only the burn portion alone is obtained by using the Simple Linear Iterative Clustering (SLIC) algorithm.
+    4a)The test images are segmented and only the burn portion alone is obtained by using the Simple Linear Iterative Clustering (SLIC) algorithm.
       
   ![Screenshot (331)](https://user-images.githubusercontent.com/70104287/135692857-68656d82-0055-41bf-85fa-538f1b201e61.png)
 
-     4b)The redness, texture and saturation of each of the segmented test images are determined and from these 3 parameters, the corresponding X, Y and Z coordinates are determined using a custom-created signum function. These obtained X, Y and Z values are then fed as input to the KNN classifier which gives the degree of the burn as output.
+    4b)The redness, texture and saturation of each of the segmented test images are determined and from these 3 parameters, the corresponding X, Y and Z coordinates are determined using a custom-created signum function. These obtained X, Y and Z values are then fed as input to the KNN classifier which gives the degree of the burn as output.
       
-     4c) As an additional feature, the Total Burn Surface Area (TBSA) of the burn portion is also determined by using medical charts such as the Lund-Browder chart and Rule of Nines as reference.
+    4c) As an additional feature, the Total Burn Surface Area (TBSA) of the burn portion is also determined by using medical charts such as the Lund-Browder chart and Rule of Nines as reference.
   
