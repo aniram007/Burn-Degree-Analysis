@@ -1,5 +1,5 @@
 # Burn-Degree-Analysis
-This involves analyzing the degree of a burn (1st, 2nd or 3rd degree) using multisimensional scaling (MDS) and a kNN classifier. A major reference for this project is "Burn Depth Analysis using Multidimensional Scaling applied to psychophysical experiment data" by Acha et al. The link to this paper is provided here: https://ieeexplore.ieee.org/document/6488854
+This involves analyzing the degree of a burn (1st, 2nd or 3rd degree) using multisimensional scaling (MDS) and a kNN classifier. An accuracy of 75% has been obtained. A major reference for this project is "Burn Depth Analysis using Multidimensional Scaling applied to psychophysical experiment data" by Acha et al. The link to this paper is provided here: https://ieeexplore.ieee.org/document/6488854
 
 The process flow is as follows:
 
